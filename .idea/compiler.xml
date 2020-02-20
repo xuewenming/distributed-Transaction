@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <option name="BUILD_PROCESS_HEAP_SIZE" value="1024" />
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="builder" />
+        <module name="dtx-discover" />
+        <module name="dtx-notifymsg-demo" />
+        <module name="dtx-notifymsg-demo-pay" />
+        <module name="dtx-notifynsg-demo-bank" />
+        <module name="dtx-seata-demo" />
+        <module name="dtx-seata-demo-bank1" />
+        <module name="dtx-seata-demo-bank2" />
+        <module name="dtx-tcc-demo" />
+        <module name="dtx-tcc-demo-bank1" />
+        <module name="dtx-tcc-demo-bank2" />
+        <module name="dtx-txmsg-demo" />
+        <module name="dtx-txmsg-demo-bank1" />
+        <module name="dtx-txmsg-demo-bank2" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="builder" target="1.8" />
+      <module name="dtx" target="1.8" />
+      <module name="dtx-discover" target="1.8" />
+      <module name="dtx-notifymsg-demo" target="1.8" />
+      <module name="dtx-notifymsg-demo-pay" target="1.8" />
+      <module name="dtx-notifynsg-demo-bank" target="1.8" />
+      <module name="dtx-seata-demo" target="1.8" />
+      <module name="dtx-seata-demo-bank1" target="1.8" />
+      <module name="dtx-seata-demo-bank2" target="1.8" />
+      <module name="dtx-tcc-demo" target="1.8" />
+      <module name="dtx-tcc-demo-bank1" target="1.8" />
+      <module name="dtx-tcc-demo-bank2" target="1.8" />
+      <module name="dtx-txmsg-demo" target="1.8" />
+      <module name="dtx-txmsg-demo-bank1" target="1.8" />
+      <module name="dtx-txmsg-demo-bank2" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="builder" options="-parameters" />
+      <module name="dtx" options="-parameters" />
+      <module name="dtx-discover" options="-parameters" />
+      <module name="dtx-notifymsg-demo" options="-parameters" />
+      <module name="dtx-notifymsg-demo-pay" options="-parameters" />
+      <module name="dtx-notifynsg-demo-bank" options="-parameters" />
+      <module name="dtx-seata-demo" options="-parameters" />
+      <module name="dtx-seata-demo-bank1" options="-parameters" />
+      <module name="dtx-seata-demo-bank2" options="-parameters" />
+      <module name="dtx-tcc-demo" options="-parameters" />
+      <module name="dtx-tcc-demo-bank1" options="-parameters" />
+      <module name="dtx-tcc-demo-bank2" options="-parameters" />
+      <module name="dtx-txmsg-demo" options="-parameters" />
+      <module name="dtx-txmsg-demo-bank1" options="-parameters" />
+      <module name="dtx-txmsg-demo-bank2" options="-parameters" />
+    </option>
+  </component>
+</project>

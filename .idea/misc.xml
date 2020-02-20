@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/builder/pom.xml" />
+        <option value="$PROJECT_DIR$/dtx/pom.xml" />
+        <option value="$PROJECT_DIR$/dtx/dtx-discover/pom.xml" />
+        <option value="$PROJECT_DIR$/dtx/dtx-seata-demo/pom.xml" />
+        <option value="$PROJECT_DIR$/dtx/dtx-seata-demo/dtx-seata-demo-bank1/pom.xml" />
+        <option value="$PROJECT_DIR$/dtx/dtx-seata-demo/dtx-seata-demo-bank2/pom.xml" />
+        <option value="$PROJECT_DIR$/dtx/dtx-tcc-demo/dtx-tcc-demo-bank1/pom.xml" />
+        <option value="$PROJECT_DIR$/dtx/dtx-tcc-demo/dtx-tcc-demo-bank2/pom.xml" />
+        <option value="$PROJECT_DIR$/dtx/dtx-txmsg-demo/pom.xml" />
+        <option value="$PROJECT_DIR$/dtx/dtx-txmsg-demo/dtx-txmsg-demo-bank1/pom.xml" />
+        <option value="$PROJECT_DIR$/dtx/dtx-txmsg-demo/dtx-txmsg-demo-bank2/pom.xml" />
+        <option value="$PROJECT_DIR$/dtx/dtx-notifymsg-demo/pom.xml" />
+        <option value="$PROJECT_DIR$/dtx/dtx-notifymsg-demo/dtx-notifymsg-demo-pay/pom.xml" />
+        <option value="$PROJECT_DIR$/dtx/dtx-notifymsg-demo/dtx-notifynsg-demo-bank/pom.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="NodePackageJsonFileManager">
+    <packageJsonPaths />
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State>
+            <id />
+          </State>
+          <State>
+            <id>Java</id>
+          </State>
+          <State>
+            <id>Serialization issuesJava</id>
+          </State>
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>SerializableHasSerialVersionUIDField</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
+  </component>
+  <component name="ProjectRootManager">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+</project>

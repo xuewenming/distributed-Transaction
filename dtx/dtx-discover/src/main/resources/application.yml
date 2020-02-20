@@ -1,0 +1,31 @@
+spring:
+  application:
+    name: dtx-discovery
+server:
+  port: 56080
+
+
+eureka:
+  server:
+    enable-self-preservation: false    #\u5173\u95ED\u670D\u52A1\u5668\u81EA\u6211\u4FDD\u62A4\uFF0C\u5BA2\u6237\u7AEF\u5FC3\u8DF3\u68C0\u6D4B15\u5206\u949F\u5185\u9519\u8BEF\u8FBE\u523080%\u670D\u52A1\u4F1A\u4FDD\u62A4\uFF0C\u5BFC\u81F4\u522B\u4EBA\u8FD8\u8BA4\u4E3A\u662F\u597D\u7528\u7684\u670D\u52A1
+    eviction-interval-timer-in-ms: 10000 #\u6E05\u7406\u95F4\u9694\uFF08\u5355\u4F4D\u6BEB\u79D2\uFF0C\u9ED8\u8BA4\u662F60*1000\uFF095\u79D2\u5C06\u5BA2\u6237\u7AEF\u5254\u9664\u7684\u670D\u52A1\u5728\u670D\u52A1\u6CE8\u518C\u5217\u8868\u4E2D\u5254\u9664#
+    shouldUseReadOnlyResponseCache: true #eureka\u662FCAP\u7406\u8BBA\u79CD\u57FA\u4E8EAP\u7B56\u7565\uFF0C\u4E3A\u4E86\u4FDD\u8BC1\u5F3A\u4E00\u81F4\u6027\u5173\u95ED\u6B64\u5207\u6362CP \u9ED8\u8BA4\u4E0D\u5173\u95ED false\u5173\u95ED
+    response-cache-update-interval-ms: 3000  #eureka server\u5237\u65B0readCacheMap\u7684\u65F6\u95F4\uFF0C\u6CE8\u610F\uFF0Cclient\u8BFB\u53D6\u7684\u662FreadCacheMap\uFF0C\u8FD9\u4E2A\u65F6\u95F4\u51B3\u5B9A\u4E86\u591A\u4E45\u4F1A\u628AreadWriteCacheMap\u7684\u7F13\u5B58\u66F4\u65B0\u5230readCacheMap\u4E0A #eureka server\u5237\u65B0readCacheMap\u7684\u65F6\u95F4\uFF0C\u6CE8\u610F\uFF0Cclient\u8BFB\u53D6\u7684\u662FreadCacheMap\uFF0C\u8FD9\u4E2A\u65F6\u95F4\u51B3\u5B9A\u4E86\u591A\u4E45\u4F1A\u628AreadWriteCacheMap\u7684\u7F13\u5B58\u66F4\u65B0\u5230readCacheMap\u4E0A\u9ED8\u8BA430s
+    response-cache-auto-expiration-in-seconds: 180   #eureka server\u7F13\u5B58readWriteCacheMap\u5931\u6548\u65F6\u95F4\uFF0C\u8FD9\u4E2A\u53EA\u6709\u5728\u8FD9\u4E2A\u65F6\u95F4\u8FC7\u53BB\u540E\u7F13\u5B58\u624D\u4F1A\u5931\u6548\uFF0C\u5931\u6548\u524D\u4E0D\u4F1A\u66F4\u65B0\uFF0C\u8FC7\u671F\u540E\u4ECEregistry\u91CD\u65B0\u8BFB\u53D6\u6CE8\u518C\u670D\u52A1\u4FE1\u606F\uFF0Cregistry\u662F\u4E00\u4E2AConcurrentHashMap\u3002
+  client:
+    register-with-eureka: false  #false:\u4E0D\u4F5C\u4E3A\u4E00\u4E2A\u5BA2\u6237\u7AEF\u6CE8\u518C\u5230\u6CE8\u518C\u4E2D\u5FC3
+    fetch-registry: false      #\u4E3Atrue\u65F6\uFF0C\u53EF\u4EE5\u542F\u52A8\uFF0C\u4F46\u62A5\u5F02\u5E38\uFF1ACannot execute request on any known server
+    instance-info-replication-interval-seconds: 10
+    serviceUrl:
+      defaultZone: http://localhost:${server.port}/eureka/
+  instance:
+    hostname: ${spring.cloud.client.ip-address}
+    prefer-ip-address: true
+    instance-id: ${spring.application.name}:${spring.cloud.client.ip-address}:${spring.application.instance_id:${server.port}}
+    lease-renewal-interval-in-seconds: 5    # \u7EED\u7EA6\u66F4\u65B0\u65F6\u95F4\u95F4\u9694\uFF08\u9ED8\u8BA430\u79D2\uFF09
+    lease-expiration-duration-in-seconds: 10 # \u7EED\u7EA6\u5230\u671F\u65F6\u95F4\uFF08\u9ED8\u8BA490\u79D2\uFF09
+
+
+
+logging:
+  config: classpath:log4j2-dev.xml
